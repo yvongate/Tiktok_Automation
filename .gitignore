@@ -50,3 +50,6 @@ Thumbs.db
 
 # --- Exception : asset volontaire du workflow n8n (pas genere/scrape) ---
 !tiktok-video-generator/shared/audio.mp3
+
+# Projet hebergé dans son PROPRE depot (titkok_ferdinandrenard)
+titkok_ferdinandrenard/
