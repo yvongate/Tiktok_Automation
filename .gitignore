@@ -1,0 +1,52 @@
+# --- Secrets ---
+api.txt
+*.env
+.env*
+
+# --- Python ---
+__pycache__/
+*.pyc
+
+# --- Media generee/scrapee (le projet est un pipeline video, tout ce qui
+# suit est reproductible ou scrape, jamais du code source) ---
+*.mp4
+*.mov
+*.wav
+*.mp3
+*.png
+*.jpg
+*.jpeg
+*.webm
+
+# --- Logs et fichiers de travail par run ---
+*.log
+generate_*.log
+
+# --- Dossiers de travail / bibliotheques scrapees / sorties generees ---
+video-vision/input/
+video-vision/output/
+video-vision/library_finance/*/
+video-vision/library_zack_d_films/*/
+video-vision/tutorials/downloads/
+video-vision/tutorials/library/*/
+video-vision/zack-video-01/scenes*/
+video-vision/zack-video-01/__pycache__/
+video-vision/kie-test/__pycache__/
+
+# --- Cache par run du pipeline principal (idee/script/scenes/voix -
+# regeneres a chaque execution, pas du code source) ---
+video-vision/zack-video-01/idea*.txt
+video-vision/zack-video-01/script*.txt
+video-vision/zack-video-01/scenes_raw*.json
+video-vision/zack-video-01/concat*.txt
+video-vision/zack-video-01/_*
+# Artefact de l'ancien systeme de sous-titres (retire du pipeline)
+video-vision/zack-video-01/subtitles.ass
+
+# --- Divers ---
+.DS_Store
+Thumbs.db
+.claude/
+
+# --- Exception : asset volontaire du workflow n8n (pas genere/scrape) ---
+!tiktok-video-generator/shared/audio.mp3
